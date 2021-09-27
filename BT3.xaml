@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="First.BT3"
+    Title="Bai Tap 3">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Welcome to Xamarin.Forms!" FontSize="40" Margin="10"></Label>
+
+            <Entry Placeholder="Name" Keyboard="Text" FontSize="20" Margin="10"></Entry>
+
+            <Entry Placeholder="Email" Keyboard="Email" FontSize="20" Margin="10"></Entry>
+
+            <Entry Placeholder="Phone Number" Keyboard="Telephone" FontSize="20" Margin="10"></Entry>
+
+            <Entry Placeholder="Password" IsPassword="True" FontSize="20" Margin="10"></Entry>
+            <Entry Placeholder="Confirm Password" IsPassword="True" FontSize="20" Margin="10"></Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

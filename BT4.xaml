@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="First.BT4"
+    Title="Bai Tap 4">
+    <ContentPage.Content>
+        <Grid Margin="15">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Form Dang Ky" HorizontalOptions="Center" FontSize="40" TextColor="Red" FontAttributes="Bold"
+                   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"></Label>
+
+            <Label Text="Name:" VerticalOptions="Center" Grid.Row="1" Grid.Column="0"></Label>
+            <Label Text="Email:" VerticalOptions="Center" Grid.Row="2" Grid.Column="0"></Label>
+            <Label Text="Birthday:" VerticalOptions="Center" Grid.Row="3" Grid.Column="0"></Label>
+            <Label Text="Male?" VerticalOptions="Center" Grid.Row="4" Grid.Column="0"></Label>
+
+            <Entry x:Name="usrName" Placeholder="Enter your name" VerticalOptions="CenterAndExpand" Keyboard="Text" Grid.Row="1" Grid.Column="1"></Entry>
+            <Entry x:Name="usrEmail" Placeholder="Enter your email" VerticalOptions="CenterAndExpand" Keyboard="Email" Grid.Row="2" Grid.Column="1"></Entry>
+            <!--<Entry x:Name="usrDOB" Placeholder="Enter your birthday" VerticalOptions="CenterAndExpand" Keyboard="Text" Grid.Row="3" Grid.Column="1"></Entry>-->
+            <DatePicker Format="dd/MM/yyyy" x:Name="usrDOB" Grid.Row="3" VerticalOptions="CenterAndExpand" Grid.Column="1"></DatePicker>
+            <Switch x:Name="usrGender" IsToggled="False" HorizontalOptions="Start" Grid.Row="4" Grid.Column="1"></Switch>
+
+            <Button Text="SUBMIT" x:Name="Submit" Clicked="Submit_Clicked" HorizontalOptions="End" VerticalOptions="Center" Grid.Row="5" Grid.Column="0"></Button>
+            <Button Text="CANCEL" x:Name="Cancel" Clicked="Cancel_Clicked" HorizontalOptions="Start" VerticalOptions="Center" Grid.Row="5" Grid.Column="1"></Button>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

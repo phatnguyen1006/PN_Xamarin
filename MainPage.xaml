@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="First.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="My Name is Phat!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Button Text="BT_1" x:Name="BT_1" Clicked="BT_1_Clicked"></Button>
+        <Button Text="BT_2" x:Name="BT_2" Clicked="BT_2_Clicked"></Button>
+        <Button Text="BT_3" x:Name="BT_3" Clicked="BT_3_Clicked"></Button>
+        <Button Text="BT_4" x:Name="BT_4" Clicked="BT_4_Clicked"></Button>
+        <Button Text="BT_5" x:Name="BT_5" Clicked="BT_5_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>

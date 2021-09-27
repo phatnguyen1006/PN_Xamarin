@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="First.BT2"
+    Title="Bai Tap 2">
+    <Grid ColumnSpacing="0" RowSpacing="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <BoxView BackgroundColor="DeepPink" Grid.Column="0" Grid.Row="0"></BoxView>
+        <BoxView BackgroundColor="Blue" Grid.Column="1" Grid.Row="0"></BoxView>
+        <BoxView BackgroundColor="DeepPink" Grid.Column="2" Grid.Row="0"></BoxView>
+        <BoxView BackgroundColor="Blue" Grid.Column="3" Grid.Row="0"></BoxView>
+
+        <BoxView BackgroundColor="Blue" Grid.Column="0" Grid.Row="1"></BoxView>
+        <BoxView BackgroundColor="DeepPink" Grid.Column="1" Grid.Row="1"></BoxView>
+        <BoxView BackgroundColor="Blue" Grid.Column="2" Grid.Row="1"></BoxView>
+        <BoxView BackgroundColor="DeepPink" Grid.Column="3" Grid.Row="1"></BoxView>
+
+        <BoxView BackgroundColor="DeepPink" Grid.Column="0" Grid.Row="2"></BoxView>
+        <BoxView BackgroundColor="Blue" Grid.Column="1" Grid.Row="2"></BoxView>
+        <BoxView BackgroundColor="DeepPink" Grid.Column="2" Grid.Row="2"></BoxView>
+        <BoxView BackgroundColor="Blue" Grid.Column="3" Grid.Row="2"></BoxView>
+
+        <BoxView BackgroundColor="Blue" Grid.Column="0" Grid.Row="3"></BoxView>
+        <BoxView BackgroundColor="DeepPink" Grid.Column="1" Grid.Row="3"></BoxView>
+        <BoxView BackgroundColor="Blue" Grid.Column="2" Grid.Row="3"></BoxView>
+        <BoxView BackgroundColor="DeepPink" Grid.Column="3" Grid.Row="3"></BoxView>
+    </Grid>
+</ContentPage>
