@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{4A5F319E-3D01-4B64-897F-600186B034D3}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BTTH2" expanded="True">
+            <Node name="BTTH2" expanded="True">
+              <Node name="Booking" expanded="True">
+                <Node name="Booking.xaml" expanded="True">
+                  <Node name="Booking.xaml.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="ListView.xaml" expanded="True" />
+            </Node>
+            <Node name="BTTH2.Android" expanded="True">
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BTTH2.Android PreferredExecutionTarget="Android.Pixel_3a_API_30" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

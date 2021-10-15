@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BTTH2.Hotels">
+    <ContentPage.Content>
+        <ListView x:Name="ListHotes" RowHeight="100" ItemSelected="ListHotes_ItemSelected" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+
+                        <Grid RowSpacing="20" Margin="20">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Aspect="AspectFill" Source="{Binding hotelImg}"
+                                   HeightRequest="100" WidthRequest="100"
+                                   Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"></Image>
+                            <Label
+                                Text="{Binding hotelName}"
+                                FontAttributes="Bold" FontSize="Large"
+                                VerticalOptions="Start" HorizontalOptions="Center"
+                                Grid.Row="0" Grid.Column="1"
+                            ></Label>
+
+                            <Label Text="{Binding hotelAddress}"
+                                FontSize="Body"
+                                VerticalOptions="End" HorizontalOptions="Center"
+                                Grid.Row="1" Grid.Column="1"
+                            ></Label>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

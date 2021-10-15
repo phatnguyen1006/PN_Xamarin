@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BTTH2.Booking" Title="Booking">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image
+                Margin="40"
+                Source="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/1280px-Booking.com_logo.svg.png"
+                HeightRequest="100" WidthRequest="100"
+            >
+
+            </Image>
+
+            <ListView x:Name="ListCity" RowHeight="100" ItemSelected="ListCity_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <Grid Padding="20,0,20,0">
+                                <Grid.RowDefinitions></Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <Image Aspect="Fill" Source="{Binding cityImg}" Grid.Row="0" Grid.Column="0"></Image>
+                                <Label
+                                    Text="{Binding cityName}"
+                                    FontAttributes="Bold" FontSize="Large"
+                                    VerticalOptions="Center" HorizontalOptions="Center"
+                                    Grid.Row="0" Grid.Column="1"
+                                ></Label>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

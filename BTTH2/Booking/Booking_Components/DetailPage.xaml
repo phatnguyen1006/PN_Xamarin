@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BTTH2.DetailPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="40,40,40,10">
+                <Image x:Name="HotelImage" HorizontalOptions="Center"></Image>
+                <Label x:Name="HotelName" TextColor="Red" HorizontalOptions="Center" FontSize="Large"></Label>
+                <Label x:Name="HotelAddress" TextColor="Blue" HorizontalOptions="Center"></Label>
+                <Label x:Name="HotelDescription" TextColor="Black" HorizontalOptions="Center"></Label>
+            </StackLayout>
+    </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
