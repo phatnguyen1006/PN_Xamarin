@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BTTH3.BT1" Title="ListView Grouping">
+    <ContentPage.Content>
+        <ListView x:Name="LstCountry" IsGroupingEnabled="True"
+                      GroupDisplayBinding="{Binding countryName}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell ImageSource="{Binding cityImg}"
+                                   Text="{Binding cityName}">
+
+                        </ImageCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+    </ContentPage.Content>
+</ContentPage>

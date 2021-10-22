@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BTTH3.BT4" Title="TableView">
+    <ContentPage.Content>
+        <TableView HasUnevenRows="True">
+            <TableRoot>
+                <TableSection Title="Vehicle Info">
+                    <ViewCell>
+                        <Grid Padding="20,0,20,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="1.5*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="Name" VerticalOptions="Center" Grid.Row="0" Grid.Column="0"></Label>
+                            <Label Text="Reg No" VerticalOptions="Center" Grid.Row="1" Grid.Column="0"></Label>
+                            <Image x:Name="ImgVehicle" HeightRequest="50" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Start" Grid.Row="2" Grid.Column="0"></Image>
+                            <Label Text="Last Service" VerticalOptions="Center" Grid.Row="3" Grid.Column="0"></Label>
+                            <Label Text="Service Interval" VerticalOptions="Center" Grid.Row="4" Grid.Column="0"></Label>
+                            <Label Text="Next Service" VerticalOptions="Center" Grid.Row="5" Grid.Column="0"></Label>
+
+                            <Entry x:Name="vehicleName" Placeholder="Enter your name" VerticalOptions="CenterAndExpand" Keyboard="Text" Grid.Row="0" Grid.Column="1" Text="BMW"></Entry>
+                            <Entry x:Name="vehicleReg" Placeholder="Enter your email" VerticalOptions="CenterAndExpand" Keyboard="Email" Grid.Row="1" Grid.Column="1" Text="KAREG889"></Entry>
+                            <Picker x:Name="PrkVehicle"
+                                FontSize="Medium"
+                                    SelectedIndexChanged="PrkVehicle_SelectedIndexChanged"
+                                Grid.Row="2" Grid.Column="1"></Picker>
+                            <DatePicker Format="dd/MM/yyyy" x:Name="PrkLastS" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="1"></DatePicker>
+                            <Picker x:Name="PrkInterval"
+                                FontSize="Medium"
+                                Grid.Row="4" Grid.Column="1"
+                                    ></Picker>
+                            <DatePicker Format="dd/MM/yyyy" x:Name="PrkNextS" VerticalOptions="CenterAndExpand" Grid.Row="5" Grid.Column="1"></DatePicker>
+                        </Grid>
+                    </ViewCell>
+                </TableSection>
+                <TableSection Title="Reminder Settings">
+                    <ViewCell>
+                        <Grid Padding="20,0,20,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="1.5*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Reminder" VerticalOptions="Center" Grid.Row="0" Grid.Column="0"></Label>
+                            <Label Text="Remind Me" VerticalOptions="Center" Grid.Row="1" Grid.Column="0"></Label>
+
+                            <Switch x:Name="reminder" IsToggled="True" HorizontalOptions="Start" Grid.Row="0" Grid.Column="1"></Switch>
+                            <Picker x:Name="PrkRemind"
+                                FontSize="Medium"
+                                Grid.Column="1" Grid.Row="1"
+                                ></Picker>
+                        </Grid>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

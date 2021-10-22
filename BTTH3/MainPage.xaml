@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BTTH3.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="19521998 - BTTH2" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Button BackgroundColor="DarkCyan" TextColor="DarkOrange" Margin="40,10,40,0" Text="3.1. ListView Grouping" Clicked="BT1_Clicked"></Button>
+        <Button BackgroundColor="DarkCyan" TextColor="DarkOrange" Margin="40,10,40,0" Text="3.2. Picker (Book)" Clicked="BT2_Clicked"></Button>
+        <Button BackgroundColor="DarkCyan" TextColor="DarkOrange" Margin="40,10,40,0" Text="3.3. Picker (Country)" Clicked="BT3_Clicked"></Button>
+        <Button BackgroundColor="DarkCyan" TextColor="DarkOrange" Margin="40,10,40,0" Text="3.4. TableView" Clicked="BT4_Clicked"></Button>
+    </StackLayout>
+</ContentPage>

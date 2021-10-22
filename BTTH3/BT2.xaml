@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BTTH3.BT2" Title="BT2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker x:Name="PrkBook" Title="Chon mot cuon sach" TitleColor="Blue" ItemsSource="{Binding bookTitle}"
+                    FontSize="Large"
+                    ItemDisplayBinding="{Binding bookTitle}" SelectedIndexChanged="PrkBook_SelectedIndexChanged"></Picker>
+
+            <ListView x:Name="LstSelectedBook">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell ImageSource="{Binding bookImg}" Text="{Binding bookTitle}" ></ImageCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
