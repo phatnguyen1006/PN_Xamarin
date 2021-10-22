@@ -69,6 +69,13 @@
                         </Grid>
                     </ViewCell>
                 </TableSection>
+
+                <TableSection>
+                    <ViewCell>
+                        <Button BackgroundColor="Black" TextColor="Gold" Text="Submit" x:Name="SubmitBtn" HorizontalOptions="Center"
+                                WidthRequest="100" HeightRequest="50" Clicked="SubmitBtn_Clicked"></Button>
+                    </ViewCell>
+                </TableSection>
             </TableRoot>
         </TableView>
     </ContentPage.Content>

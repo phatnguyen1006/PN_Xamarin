@@ -95,5 +95,22 @@ namespace BTTH3
             }
         }
 
+        void SubmitBtn_Clicked(System.Object sender, System.EventArgs e)
+        {
+            var name = vehicleName.Text;
+            var regNo = vehicleReg.Text;
+            var vehicleType = PrkVehicle.SelectedItem;
+            var svLast = PrkLastS.Date.ToString("dd/MM/yyyy");
+            var svInterval = PrkInterval.SelectedItem;
+            var svNext = PrkNextS.Date.ToString("dd/MM/yyyy");
+            var remind = reminder.IsToggled ? true : false;
+            var remindTime = PrkRemind.SelectedItem;
+
+            var message = "Name: " + name + "\nRegNo: " + regNo + "\nType" + vehicleType + "\nLast Service: " + svLast + "\nService Interval: " + svInterval + "\nNext Service: " + svNext;
+            var remindMess = remind ? "\nWe will remind you " + remindTime : "\nWe won't remind you. Thank you!";
+
+
+            DisplayAlert("Vehicle Information", message + remindMess, "OK");
+        }
     }
 }
