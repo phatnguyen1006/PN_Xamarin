@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BTTH4.MainPage" Title="19521998 - BTTH4">
+
+    <StackLayout>
+        <!--<Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>-->
+        <Image Margin="20,10,20,20"
+            Source="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/1280px-Booking.com_logo.svg.png"
+            HeightRequest="100">
+        </Image>
+
+        <StackLayout Orientation="Horizontal" Padding="20,0,20,5">
+            <Label Text="Them moi" FontSize="Large" TextColor="DarkBlue"
+                   VerticalOptions="Center" HorizontalOptions="Center"></Label>
+            <Button x:Name="CmdAddCity" Text="+" FontAttributes="Bold" FontSize="Large"
+                    VerticalOptions="Center" HorizontalOptions="Center"
+                    Clicked="CmdAddCity_Clicked"
+                    ></Button>
+        </StackLayout>
+
+        <ListView x:Name="ListCity" ItemSelected="ListCity_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell ImageSource="{Binding cityImg}" Text="{Binding cityName}"></ImageCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

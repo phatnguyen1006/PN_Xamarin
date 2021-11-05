@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{D8457C33-A8E6-40DD-9104-D81A58E6E6A0}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BTTH4/AddHotelPage.xaml.cs">
+    <Files>
+      <File FileName="BTTH4/HotelPage.xaml" Line="27" Column="24" />
+      <File FileName="BTTH4/MainPage.xaml.cs" Line="39" Column="63" />
+      <File FileName="BTTH4/DatabaseManager/Database.cs" Line="91" Column="42" />
+      <File FileName="BTTH4/AddHotelPage.xaml" Line="40" Column="17" />
+      <File FileName="BTTH4/HotelPage.xaml.cs" Line="29" Column="54" />
+      <File FileName="BTTH4/AddHotelPage.xaml.cs" Line="39" Column="67" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BTTH4" expanded="True">
+            <Node name="BTTH4" expanded="True">
+              <Node name="DatabaseManager" expanded="True" />
+              <Node name="Screens" expanded="True" />
+              <Node name="AddHotelPage.xaml" expanded="True">
+                <Node name="AddHotelPage.xaml.cs" selected="True" />
+              </Node>
+              <Node name="HotelPage.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BTTH4.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.BTTH4.Android PreferredExecutionTarget="Android.Pixel_3_API_30" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

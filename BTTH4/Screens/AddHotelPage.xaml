@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BTTH4.AddHotelPage" Title="Them khach san">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="logo.png" HeightRequest="100"></Image>
+
+            <Grid Padding="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Ten KS" FontSize="20" VerticalOptions="Center"
+                       Grid.Row="0" Grid.Column="0"></Label>
+                <Entry Keyboard="Text" x:Name="hotelNameTxt" VerticalOptions="Center" Grid.Row="0" Grid.Column="1"></Entry>
+
+                
+                <Label Text="Hinh KS" FontSize="20" VerticalOptions="Center"
+                       Grid.Row="1" Grid.Column="0"></Label>
+                <Entry Keyboard="Text" x:Name="hotelImgTxt" VerticalOptions="Center" Grid.Row="1" Grid.Column="1"></Entry>
+
+                <Label Text="Thanh Pho" FontSize="20" VerticalOptions="Center"
+                       Grid.Row="2" Grid.Column="0"></Label>
+                <Picker x:Name="PkrCity" Title="Chon TP"
+                        ItemsSource="{Binding cityName}" ItemDisplayBinding="{Binding cityName}"
+                        Grid.Row="2" Grid.Column="1"
+                        ></Picker>
+
+                <Button Text="Them" x:Name="CmdAddNewHotel" Clicked="CmdAddNewHotel_Clicked" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+                        HorizontalOptions="Center"
+                        ></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
