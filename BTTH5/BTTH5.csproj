@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="sqlite-net-pcl" />
+    <None Remove="DatabaseManager\" />
+    <None Remove="Models\" />
+    <None Remove="Screens\" />
+    <None Remove="Screens\Admin\" />
+    <None Remove="Screens\User\" />
+    <None Remove="Screens\Authentication\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DatabaseManager\" />
+    <Folder Include="Models\" />
+    <Folder Include="Screens\" />
+    <Folder Include="Screens\Admin\" />
+    <Folder Include="Screens\User\" />
+    <Folder Include="Screens\Authentication\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Screens\User\UserPage.xaml.cs">
+      <DependentUpon>UserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Screens\Users\UserPage.xaml.cs">
+      <DependentUpon>UserPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

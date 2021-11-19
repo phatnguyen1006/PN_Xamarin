@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BTTH5.Screens.Admin.AddNewBook">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Margin="20" Source="https://www.fiction-addiction.com/media/home/pictures/Bookshop_Logo_Dark.png"
+                   HeightRequest="100"></Image>
+
+            <Grid Padding="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Book Name" FontSize="20" VerticalOptions="Center"
+                       Grid.Row="0" Grid.Column="0"></Label>
+                <Entry Keyboard="Text" x:Name="bookNameTxt" VerticalOptions="Center" Grid.Row="0" Grid.Column="1"></Entry>
+
+                
+                <Label Text="Book Image" FontSize="20" VerticalOptions="Center"
+                       Grid.Row="1" Grid.Column="0"></Label>
+                <Entry Keyboard="Text" x:Name="bookImgTxt" Placeholder="https://..." VerticalOptions="Center" Grid.Row="1" Grid.Column="1"></Entry>
+
+                <Label Text="Book Price" FontSize="20" VerticalOptions="Center"
+                       Grid.Row="2" Grid.Column="0"></Label>
+                <Entry x:Name="bookPriceTxt" Keyboard="Numeric" Placeholder="100000" VerticalOptions="Center" Grid.Row="2" Grid.Column="1"></Entry>
+
+                <Button Text="Add" x:Name="CmdAddNewBook" Clicked="CmdAddNewBook_Clicked" Grid.Row="3" Grid.ColumnSpan="2"
+                        HorizontalOptions="Center"
+                        ></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

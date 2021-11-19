@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{39E03BBF-8BEB-4FE4-BF5C-82E0371D5312}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BTTH5/DatabaseManager/Database.cs">
+    <Files>
+      <File FileName="BTTH5/MainPage.xaml" Line="27" Column="77" />
+      <File FileName="BTTH5/MainPage.xaml.cs" Line="71" Column="1" />
+      <File FileName="BTTH5/DatabaseManager/Database.cs" Line="64" Column="42" />
+      <File FileName="BTTH5/Models/UserModel.cs" Line="11" Column="49" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BTTH5" expanded="True">
+            <Node name="BTTH5" expanded="True">
+              <Node name="DatabaseManager" expanded="True">
+                <Node name="Database.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BTTH5.Android PreferredExecutionTarget="Android.Pixel_3_API_30" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BTTH5.iOS FirstBuild="True" />
+</Properties>

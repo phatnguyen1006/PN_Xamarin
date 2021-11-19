@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BTTH5.UserPage" Title="Book Library">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="CartBtn" Text="Cart" Clicked="CartBtn_Clicked"></ToolbarItem>
+        <ToolbarItem x:Name="LogOutBtn" Text="LogOut" Clicked="LogOutBtn_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Margin="20,10,20,20"
+                Source="https://www.fiction-addiction.com/media/home/pictures/Bookshop_Logo_Dark.png"
+                HeightRequest="100">
+            </Image>
+
+            <ListView x:Name="ListBook" ItemSelected="ListBook_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell ImageSource="{Binding bookImg}" Text="{Binding bookName}"></ImageCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
